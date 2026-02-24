@@ -10,6 +10,9 @@ body {
   font-family: monospace;
   font-size: 30px;
 }
+a {
+text-decoration: none;
+}
 
 .corner-text {
   position: absolute;
