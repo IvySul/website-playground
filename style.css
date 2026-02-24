@@ -1,11 +1,70 @@
 body {
   background-image: url("playground.jpeg");
   background-size: cover;
-  align-content: center;
   background-repeat: no-repeat;
-   max-height: 100vh;
-  padding: 15px;
+  background-position: center;
+
+  height: 100vh;
+  margin: 0;
+
   font-family: courier;
   font-size: 30px;
+}
 
+/* Corner text */
+.corner-text {
+  position: absolute;
+  top: 25px;
+  left: 35px;
+
+  cursor: pointer;
+  color: #222;
+}
+
+/* Hide checkbox */
+.toggle {
+  display: none;
+}
+
+/* Popup */
+.popup {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: rgba(255,255,255,0.9);
+
+  padding: 35px;
+  min-width: 260px;
+
+  border-radius: 12px;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.btn {
+  background: #eee;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Show popup when checked */
+.toggle:checked ~ .popup {
+  opacity: 1;
+  pointer-events: auto;
 }
