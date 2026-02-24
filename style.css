@@ -17,9 +17,9 @@ body {
   border-radius: 8px;
   cursor: pointer;
   font-size: 18px;
-  text-decoration: none;   /* Removes underline */
-  color: #222;             /* Makes link text match buttons */
-  display: inline-block;   /* Makes link behave like button */
+  text-decoration: none;   
+  color: #222;            
+  display: inline-block;   
 }
 
 .corner-text {
